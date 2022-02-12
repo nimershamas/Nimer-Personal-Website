@@ -1,48 +1,76 @@
-.App {
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.app-wrapper{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+                "navbar" 
+                "home"
+                "about"
+                "experience"
+                "recommendations";
+}
+#navbar{
+    grid-area: navbar;
+}
+#app-home{
+    grid-area: home;
+    height: 73vh;
+}
+#app-about{
+    grid-area: about;
+    height: 85vh;
+}
+#experience{
+    grid-area: experience;
+    height: 100vh;
 }
 
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
-}
-
-.App-header {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+.section-title{
+    border-bottom: 3px solid steelblue;
+    color: black;
     align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+    top: 5vh;
+    position: relative;
+    max-width: fit-content;
+    left: 45%
 }
 
-.App-link {
-    color: #61dafb;
+.h1{
+    font-size: 48px;
+}
+.h2{
+    font-size: 42px;
+
+
+}
+.h3{
+    font-size: 36px;
+
+}
+.h4{
+    font-size: 30px;
+
+}
+.h5{
+    font-size: 24px;
+}
+.h6{
+    font-size: 16px;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+::-webkit-scrollbar{
+    background-color: #272b33;
+    width: 0.5rem;
 }
-
-#tsparticles {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    left: 0;
-    top: 0;
-    z-index: -1;
+::-webkit-scrollbar-thumb{
+    background-color: steelblue;
+    border-radius: 100vw;
+    border: 1px solid lightgray;
 }

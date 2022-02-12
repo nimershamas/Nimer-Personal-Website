@@ -1,38 +1,36 @@
-import React from 'react';
-import Particles from "react-tsparticles";
-import logo from './logo.svg';
+import React, {useState, useEffect} from 'react';
 import './App.css';
-import particlesOptions from "./particles.json";
+import NavBar from './components/navbar/NavBar';
+import Home from './components/home/Home';
+import About from './components/about/About';
+import Experience from './components/experience/Experience';
 
 function App() {
+
+
+    const [offset, setOffset] = useState(0);
+
+    useEffect(() => {
+        const onScroll = () => setOffset(window.pageYOffset);
+        window.removeEventListener('scroll', onScroll);
+        window.addEventListener('scroll', onScroll, { passive: true });
+        return () => window.removeEventListener('scroll', onScroll);
+    }, []);
+
     return (
-        <div className="App">
-            <Particles options={particlesOptions}/>
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo"/>
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <p>
-                    Edit <code>src/particles.json</code> to customize Particles, then save to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-                <a
-                    className="App-link"
-                    href="https://particles.js.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    See Particles samples
-                </a>
-            </header>
+        <div className="app-wrapper">
+            <div id='navbar'>
+                <NavBar offset = {offset}></NavBar></div>
+            <div id='app-home'>
+                <Home/>
+            </div>
+            <div id='app-about'>
+                <About/>
+            </div>
+            <div id='experience'>
+            <Experience/>
+            </div>
+
         </div>
     );
 }
