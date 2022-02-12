@@ -26,6 +26,10 @@ body{
 }
 #experience{
     grid-area: experience;
+    min-height: 100vh;
+}
+#recomendations{
+    grid-area: recommendations;
     height: 100vh;
 }
 
@@ -39,7 +43,7 @@ body{
     top: 5vh;
     position: relative;
     max-width: fit-content;
-    left: 45%
+    left: 44%
 }
 
 .h1{

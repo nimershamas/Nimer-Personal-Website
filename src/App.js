@@ -4,6 +4,7 @@ import NavBar from './components/navbar/NavBar';
 import Home from './components/home/Home';
 import About from './components/about/About';
 import Experience from './components/experience/Experience';
+import Recomendations from './components/recomendations/Recomendations';
 
 function App() {
 
@@ -29,6 +30,9 @@ function App() {
             </div>
             <div id='experience'>
             <Experience/>
+            </div>
+            <div id='recomendations'>
+            <Recomendations/>
             </div>
 
         </div>
