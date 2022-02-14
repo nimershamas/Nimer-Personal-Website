@@ -1,0 +1,17 @@
+.footer_wrapper {
+  background-color: #272b33;
+  border-top: 2px solid gray;
+  box-shadow: 0 0 18px 0 rgb(0 0 0 / 10%);
+  height: 100%;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+}
+
+.footer_info{
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    color: white;
+}

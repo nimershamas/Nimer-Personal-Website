@@ -13,16 +13,25 @@
 .hero-description-wrapper{
 margin-top: 10%;
 }
+.hero-info-wrapper{
+    position: relative;
+    bottom: 3vh;
+}
 .home-font{
     color: white;
     padding: 2px;
 }
 
 .hero-description{
-width: 70%;
+width: 80%;
+font-size: 1.2rem;
 }
 .hero-role{
     color: steelblue;
+    font-size: 3.2rem;
+}
+.hero-name{
+    font-size: 2rem;
 }
 
 .hero-links-list{

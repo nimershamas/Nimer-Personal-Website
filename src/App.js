@@ -5,6 +5,7 @@ import Home from './components/home/Home';
 import About from './components/about/About';
 import Experience from './components/experience/Experience';
 import Recomendations from './components/recomendations/Recomendations';
+import Footer from './components/footer/Footer';
 
 function App() {
 
@@ -31,8 +32,11 @@ function App() {
             <div id='experience'>
             <Experience/>
             </div>
-            <div id='recomendations'>
+            {/* <div id='recomendations'>
             <Recomendations/>
+            </div> */}
+            <div id='footer'>
+                <Footer/>
             </div>
 
         </div>

@@ -4,6 +4,9 @@
     height: 100%;
 }
 .about-font{
+    color: #272b33;
+    padding: 3px;
+    font-size: 1.1rem;
 }
 .about-wrapper{
     display: flex;
@@ -49,4 +52,28 @@
     background-color: #272b33;
     color: white;
     transition: all .5s ease-in-out;
+}
+
+
+.about-me{
+    font-weight: bolder;
+    font-size: 1.3rem;
+
+}
+.about-name{
+    font-size: 2rem;
+    color: steelblue;
+    font-weight: bolder;
+
+} 
+.languages{
+    font-size: 1.3rem;
+    color: #151618;
+
+}
+.about-role{
+    color: #454850;
+    font-weight: 10;
+    font-size: 1.5rem;
+
 }

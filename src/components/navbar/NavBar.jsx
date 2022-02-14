@@ -34,7 +34,7 @@ const NavBar = (props) => {
                     <li onClick={() => handleNav("home")} className={offset >= 0 && offset < 600 ? 'navbar-item active-navigation' : "navbar-item"}>Home</li>
                     <li onClick={() => handleNav("about")} className={offset > 600 && offset < 1450 ? 'navbar-item active-navigation' : "navbar-item"}>About</li>
                     <li onClick={() => handleNav("experience")} className={offset > 1450 && offset < 1800 ? 'navbar-item active-navigation' : "navbar-item"}>Experience</li>
-                    <li onClick={() => handleNav("recommendations")} className={offset > 1800 && offset < 2400 ? 'navbar-item active-navigation' : "navbar-item"}>Recommendations</li>
+                    {/* <li onClick={() => handleNav("recommendations")} className={offset > 1800 && offset < 2400 ? 'navbar-item active-navigation' : "navbar-item"}>Recommendations</li> */}
                 </ul>
             </nav>
 

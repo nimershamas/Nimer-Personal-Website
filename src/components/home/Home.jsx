@@ -15,10 +15,11 @@ const Home = () => {
             <Particles options={particlesOptions} />
             <section className='home-wrapper'>
                 <div className='hero-description-wrapper'>
-                    <div className='home-font h5'>Nimer Shamas</div>
-                    <div className='home-font h1 hero-role'>I'm Software Engineer</div>
-                    <div className='home-font hero-description'>Management Information Systems
-                        Self-learning, Work effectively as part of a team.</div>
+                    <div className='hero-info-wrapper'>
+                    <div className='home-font hero-name'>Nimer Shamas</div>
+                    <div className='home-font hero-role'>I'm Software Engineer</div>
+                    <div className='home-font hero-description'>Highly Motivated, Self-learning And Hard Working Team Player!</div>
+                    </div>
                     <div>
                         <ul className='hero-links-list'>
                             <a href='https://www.linkedin.com/in/nimer-shamas-4b0ab51a6/' target="_blank" className='hero-link-item'> <li className='hero-list-item-no-decoration' ><FontAwesomeIcon icon="fab fa-linkedin-in" /></li></a>

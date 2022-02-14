@@ -1,6 +1,6 @@
 
 .experience-container {
-    margin-top: 8%;
+    margin-top: 3%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -22,8 +22,8 @@
 }
 
 .container .card .face{
-    width: 530px;
-    height: 380px;
+    width: 450px;
+    height: 300px;
     transition: 0.5s;
 }
 
