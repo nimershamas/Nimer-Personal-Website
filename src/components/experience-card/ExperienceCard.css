@@ -104,4 +104,14 @@
 
 }
 
+@media only screen and (max-width: 650px) {
+    .container .card .face{
+        width: 370px;
+        height: 300px;
+    }
+}
+
+
+
+
 
